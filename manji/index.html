@@ -1,0 +1,41 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Manji Stamp Playground</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <canvas id="stage" aria-label="Manji stamp drawing area"></canvas>
+
+    <div class="toolbar" id="toolbar" role="region" aria-label="Drawing controls">
+        <label class="control" for="lineWidth">
+            Line width
+            <input id="lineWidth" type="range" min="1" max="40" value="8" />
+            <span class="value-pill">
+                <span id="lineWidthValue">8</span> px
+            </span>
+        </label>
+
+        <label class="control" for="colorMode">
+            Color mode
+            <select id="colorMode">
+                <option value="classic">Classic</option>
+                <option value="neon">Neon</option>
+                <option value="cyberpunk">Cyberpunk</option>
+                <option value="pastel">Pastel</option>
+                <option value="vaporwave">Vaporwave</option>
+                <option value="fire">Fire</option>
+                <option value="ocean">Ocean</option>
+                <option value="mono">Mono</option>
+                <option value="random">Random Mix</option>
+            </select>
+        </label>
+
+        <button id="clearButton" type="button">Clear</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
